@@ -1,0 +1,11 @@
+-- Fourth Semester Feedback Table
+CREATE TABLE IF NOT EXISTS fourth_sem_feedback (
+  id SERIAL PRIMARY KEY,
+  student_roll VARCHAR(50),
+  teacher_id INT,
+  teacher_name VARCHAR(100),
+  subject_name VARCHAR(100),
+  q1 INT, q2 INT, q3 INT, q4 INT, q5 INT,
+  q6 INT, q7 INT, q8 INT, q9 INT, q10 INT,
+  submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
